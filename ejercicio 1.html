@@ -10,22 +10,39 @@
 </head>
 
 <body>
-    <form action="insertar_cv.php">
-        
-            <h3>Rellena tu CV</h3>
-            <label for="idnombre">Nombre <br /></label>
-            <input type="text" name="nombre" id="idnombre" maxlength="30">
-            <br />
-            <label for="idApellidos">Apellidos<br /></label>
-            <input type="text" name="Apellidos" id="idApellidos" maxlength="80">
-            <br />
-            <label for="idContraseña">Contraseña<br /></label>
-            <input type="password" name="Contraseña" id="idContraseña"  maxlength="10">
-            <label for="idDNI">DNI</label>
-            <input type="text" name="DNI" id="idDNI">
-            <input type="radio" name="Sexo" id="">
+    <form action="insertar_cv.php" method="POST">
 
-        
+        <h3>Rellena tu CV</h3>
+        <label for="idnombre">Nombre <br /></label>
+        <input type="text" name="nombre" id="idnombre" maxlength="30">
+        <br />
+        <label for="idApellidos">Apellidos<br /></label>
+        <input type="text" name="Apellidos" id="idApellidos" maxlength="80" size="40">
+        <br />
+        <label for="idContraseña">Contraseña<br /></label>
+        <input type="password" name="Contraseña" id="idContraseña" maxlength="10">
+        <br />
+        <label for="idDNI">DNI <br /></label>
+        <input type="text" name="DNI" id="idDNI" size="15"/>
+        <br />
+        <label for="idhombre">Sexo <br /></label>
+        <input type="radio" name="sexo" id="idhombre" value="Hombre" />Hombre 
+        <br />
+        <input type="radio" name="sexo" id="idmujer" value="Mujer" />Mujer 
+        <br/>
+        <br />
+        <label for="imagen">Incluir mi foto </label>
+        <input type="file" name="Foto" id="imagen" />
+        <br />
+        <br/>
+        <input type="checkbox" name="Suscripcion" id="idsuscripcion" checked />
+        <label for="idsuscripcion">Suscribirse al boletin de novedades</label>
+        <br/>
+        <br/>
+        <input type="submit" value="Guardar cambios" />
+        <input type="reset" value="Borrar los datos introducidos">
+
+
     </form>
 </body>
 
