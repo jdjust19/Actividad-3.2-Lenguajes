@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Juan Diego Justicia del Moral">
+    <title>Ejercicio 5</title>
+</head>
+
+<body>
+        <form action="datos.php" method="GET">
+            <table border="2mm">
+                <thead>
+                    <tr>
+                        <td colspan="2" align="center">Por favor, rellene estos <a href="">datos</a></td>
+                   </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="idnombre">Nombre</label>
+                        </td>
+                        <td>
+                            <input type="text" name="nombre" id="idnombre" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="idapellidos">Apellidos</label>
+                        </td>
+                        <td>
+                            <input type="text" name="apellidos" id="idapellidos" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="iddireccion">Dirección</label>
+                        </td>
+                        <td>
+                            <input type="text" name="direccion" id="iddireccion" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="idcp">Código Postal</label>
+                        </td>
+                        <td>
+                            <input type="text" name="cp" id="idcp" pattern="[0-9]{5}" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Equipo favorito
+                        </td>
+                        <td>
+                            <input type="radio" name="jaen" id="idjaen" />
+                            <label for="idjaen">Real Jaén</label>
+                            <input type="radio" name="granada" id="idgranada" />
+                            <label for="idgranada">Granada Club de Fútbol</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Música favorita
+                        </td>
+                        <td>
+                            <input type="checkbox" name="rock" id="idrock" />
+                            <label for="idrock">Rock</label>
+                            <input type="checkbox" name="pop" id="idpop" />
+                            <label for="idpop">Pop</label>
+                            <input type="checkbox" name="heavy" id="idheavy" />
+                            <label for="idheavy">Heavy</label>
+                            <input type="checkbox" name="tecno" id="idtecno" />
+                            <label for="idtecno">Tecno</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="idescritor">Elige un escritor</label>
+                        </td>
+                        <td>
+                            <select name="escritor" id="idescritor">
+                                <option value="cervates">Cervantes</option>
+                                <option value="shakespeare">Shakespeare</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="idcomentario">¿Algún comentario?</label>
+                        </td>
+                        <td>
+                            <textarea name="comentario" id="idcomentario" cols="22" rows="12"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Enviar consulta" />
+                        </td>
+                        <td>
+                            <input type="reset" value="Borrar" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+</body>
+
+</html>

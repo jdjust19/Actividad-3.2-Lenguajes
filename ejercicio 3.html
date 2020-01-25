@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Juan Diego Justicia del Moral">
+    <title>Ejercicio 3</title>
+</head>
+
+<body>
+    <h2>Información sobre el producto</h2>
+    <form action="producto.php" method="GET">
+        <fieldset>
+            <legend>Datos básicas</legend>
+            <label for="idnombre">Nombre <br/></label>
+            <input type="text" name="nombre" id="idnombre" size="45"/>
+            <br/><br/>
+            <label for="idDescripcion">Descripción</label>
+            <br/>
+            <textarea name="descripcion" id="idDescripcion" cols="50" rows="10"></textarea>
+            <br/><br/>
+            <label for="idFoto">Foto</label>
+            <input type="file" name="foto" id="idFoto"/>
+            <br/><br/>
+            <input type="checkbox" name="visitas" id="idvisitas"/>
+            <label for="idvisitas">Añadir contador de visitas</label>
+        </fieldset>
+        <fieldset>
+            <legend>Datos económicos</legend>
+            <label for="idprecio">Precio </label>
+            <input type="number" name="precio" id="idprecio">
+            <label for="idprecio">€</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="idimpuestos">Impuestos</label>
+            <select name="impuestos" id="idimpuestos">
+                <option value="4%">4%</option>
+                <option value="7%">7%</option>
+                <option value="16%">16%</option>
+                <option value="25%">25%</option>
+            </select>
+            <br/>
+            <br/>
+            Promoción
+            <br/>
+            <input type="radio" name="promocion" id="idninguno" value="Ninguno">
+            <label for="idninguno">Ninguno</label>
+            <br/>
+            <input type="radio" name="promocion" id="idtransporte" value="Transporte gratuito">
+            <label for="idtransporte">Transporte gratuito</label>
+            <br/>
+            <input type="radio" name="promocion" id="iddescuento" value="Descuento 5%">
+            <label for="iddescuento">Descuento 5%</label>
+        </fieldset>
+    </form>
+</body>
+
+</html>
