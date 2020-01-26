@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Juan Diego Justicia del Moral">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+    <h2>Formulario de alta de usuario</h2>
+    <form action="alta.php" method="POST">
+        <table border="2mm">
+            <thead>
+                <tr>
+                    <td colspan="2" align="center">
+                        Identificador de nuevo usuario <input type="text" name="usuario" id="idusuario" value="usu_012345" readonly/>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="idnombre">Nombre</label>
+                        <input type="text" name="nombre" id="idnombre"/>
+                    </td>
+                    <td>
+                        <label for="idapellidos">Apellidos</label>
+                        <input type="text" name="apellidos" id="idapellidos">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="idcontraseña">Contraseña</label>
+                        <input type="password" name="contraseña" id="idcontraseña"/>
+                    </td>
+                    <td>
+                        <label for="idcomprobarContraseña">Confirmar Contraseña</label>
+                        <input type="password" name="comprobarContraseña" id="idcomprobarContraseña"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="idcorreo">Correo electrónico: </label>
+                        <input type="email" name="correo" id="idcorreo"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sexo</td>
+                    <td>
+                        <input type="radio" name="varon" id="idvaron"/>
+                        <label for="idvaron">Varón</label>
+                        <input type="radio" name="mujer" id="idmujer"/>
+                        <label for="idmujer">Mujer</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Aficiones</td>
+                    <td>
+                        <input type="checkbox" name="deporte" id="iddeporte"/>
+                        <label for="iddeporte">Deporte</label>
+                        <input type="checkbox" name="lectura" id="idlectura"/>
+                        <label for="idlectura">Lectura</label>
+                        <input type="checkbox" name="cine" id="idcine">
+                        <label for="idcine">Cine</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="idpais">País</label>
+                    </td>
+                    <td>
+                        <select name="pais" id="idpais">
+                            <option value="España">España</option>
+                            <option value="Francia">Francia</option>
+                            <option value="Italia">Italia</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Alemania">Alemania</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="idcolores">Colores favoritos</label>
+                    </td>
+                    <td>
+                        <select name="color" id="idcolores" multiple>
+                            <option value="Rojo">Rojo</option>
+                            <option value="Verde">Verde</option>
+                            <option value="Azul">Azul</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="idfoto">Subir su foto</label>
+                    </td>
+                    <td>
+                        <input type="file" name="foto" id="idfoto"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="idcomentario">Comentarios personales</label>
+                    </td>
+                    <td>
+                        <textarea name="comentario" id="idcomentario" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <input type="reset" value="Resetear">
+                    </td>
+                    <td align="center">
+                        <input type="submit" value="Enviar">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="button" value="Modificar datos del usuario" disabled>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
