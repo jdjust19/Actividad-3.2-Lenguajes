@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Juan Diego Justicia del Moral">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    <h1>Nuevos controles en los formularios de HTML5</h1>
+    <form action="html5.php" method="POST">
+        <label for="idnombre">Nombre (obligatorio)</label>
+        <input type="text" name="nombre" id="idnombre" required/>
+        <br/>
+        <br/>
+        <label for="idcontraseña">Contraseña (obligatorio)</label>
+        <input type="password" name="contraseña" id="idcontraseña" required/>
+        <br/>
+        <br/>
+        <label for="idtelf">Teléfono</label>
+        <input type="tel" name="telf" id="idtelf" pattern="953{1}[0-9]{6}" placeholder="(953)------"/>
+        <br/>
+        <br/>
+        <label for="idmail">Correo electrónico (gmail)</label>
+        <input type="email" name="mail" id="idmail" pattern=".*@gmail.com{1}"/>
+        <br/>
+        <br/>
+        <label for="idurl">Página web</label>
+        <input type="url" name="url" id="idurl"/>
+        <br/>
+        <br/>
+        <label for="idhora">Fecha/hora de envío</label>
+        <input type="datetime" name="hora" id="idhora">
+        <br/>
+        <br/>
+    </form>
+</body>
+</html>
