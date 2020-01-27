@@ -15,7 +15,7 @@
         <br/>
         <br/>
         <label for="idcontraseña">Contraseña (obligatorio)</label>
-        <input type="password" name="contraseña" id="idcontraseña" required/>
+        <input type="password" name="contraseña" id="idcontraseña" pattern="[0-9]{2}[A-Z][a-z]{3}" required title="La contraseña debe tener dos números, una letra mayúscula y tres minúsculas.">
         <br/>
         <br/>
         <label for="idtelf">Teléfono</label>
@@ -30,10 +30,50 @@
         <input type="url" name="url" id="idurl"/>
         <br/>
         <br/>
-        <label for="idhora">Fecha/hora de envío</label>
-        <input type="datetime" name="hora" id="idhora">
+        <label for="idhoradia">Fecha/hora de envío</label>
+        <input type="datetime-local" name="diahora" id="idhoradia" min="2020-01-20T00:00"/>
+        (mínimo 20/01/2020)
         <br/>
         <br/>
+        <label for="iddia">Fecha de resolución</label>
+        <input type="date" name="dia" id="iddia" max="2020-02-20"/>
+        (máximo 20/02/2020)
+        <br/>
+        <br/>
+        <label for="idarchivos">Número de archivos enviados</label>
+        <input type="number" name="numeroArchivos" id="idarchivos" min="0" max="5" value="0">
+        <br/>
+        <br/>
+        <label for="idcolor">Elige un color:</label>
+        <input type="color" name="color" id="idcolor" value="#1AFF00">
+        <br/>
+        <br/>
+        <label for="idrango">Puntuación (entre 0 y 10)</label>
+        <input type="range" name="rango" id="idrango" min="0" max="10" value="7">
+        <br/>
+        <br/>
+        <fieldset>
+            <legend>Conocimiento de idiomas</legend>
+            <input type="checkbox" name="idiomas" id="idIngles" value="Ingles">
+            <label for="idIngles">Inglés</label>
+            <br/>
+            <input type="checkbox" name="idiomas" id="idFrances" value="Frances">
+            <label for="idFrances">Francés</label>
+            <br/>
+            <input type="checkbox" name="idiomas" id="idAleman" value="Alemán">
+            <label for="idAleman">Alemán</label>
+        </fieldset>
+        <br/>
+        Nivel de Inglés
+        <br/>
+        <input type="radio" name="nivelIngles" id="idbajo" value="bajo" checked="checked">
+        <label for="idbajo">Bajo</label>
+        <br/>
+        <input type="radio" name="nivelIngles" id="idMedio" value="medio">
+        <label for="idMedio">Medio</label>
+        <br/>
+        <input type="radio" name="nivelIngles" id="idAlto" value="alto">
+        <label for="idAlto">Alto</label>
     </form>
 </body>
 </html>
